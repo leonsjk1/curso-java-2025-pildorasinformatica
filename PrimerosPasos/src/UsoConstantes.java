@@ -23,7 +23,7 @@ public class UsoConstantes {
 		System.out.println(resultado);
 		
 		
-		
+		String mi_nombre = "Juan";
 		
 		
 		
