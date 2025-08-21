@@ -1,0 +1,42 @@
+Temario parte 1 
+
+Descarga e instalación de Java y Eclipse.
+Introducción a Java.
+Estructuras principales del lenguaje
+POO
+- Objetos y Clases. Herencia.
+- Polimorfismo. Encapsulación
+- Clases Abstractas
+- Etc.
+
+Programación de interfaces gráficas
+- Swing
+- JavaFX
+
+Eventos
+
+Archivos JAR
+- Ejecutables
+- Distribuibles
+
+Tratamientos de errores (Excepciones y depuración)
+
+Programación genérica 
+
+Colecciones
+
+Programación multihilo. Threads.
+
+Programación con archivos externos
+SOCKETS
+Programación para BBDD. JDBC.
+JavaBeans
+Jakarta EE
+	- JSP
+	- Servlets
+	- JSTL
+	- Persistencia de datos
+	- Web sockets
+	- Seguridad
+- Despliegue
+etc.
