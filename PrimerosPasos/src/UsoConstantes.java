@@ -2,7 +2,7 @@
 public class UsoConstantes {
 
 	// constante de clase siempre por convención debe de ir en mayusculas.
-	private static final double PI=3.1416;
+	// private static final double PI=3.1416;
 
 	
 	public static void main(String[] args) {
