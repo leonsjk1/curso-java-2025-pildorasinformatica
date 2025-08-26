@@ -1,3 +1,5 @@
+//import java.util.Scanner;
+import java.util.*;
 
 public class ManipulacionCadenas {
 
@@ -132,6 +134,19 @@ public class ManipulacionCadenas {
 //			System.out.println("no se pudo");
 //		}
 //		
+		
+		// API DE JAVA E STRINGS INMUTABLES.
+		
+		String saludo = "Hola";
+		
+		saludo = saludo + " Mundo cruel"; 
+		
+		System.out.println(saludo); /*Los objetos de tipo string son inmutables, es decir no se 
+									pueden eliminar ni modificar en la memoria ocuapada. Stack and Heap */
+		
+		Scanner entrada;
+		
+		Timer z;
 		
 		
 	}
