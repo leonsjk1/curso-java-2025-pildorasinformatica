@@ -5,7 +5,11 @@ public class EntradaDatos2 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		String nombre_usuario = JOptionPane.showInputDialog("Introduce tu nombre porfavor");
+		String nombre_usuario = javax.swing.JOptionPane.showInputDialog("Introduce tu nombre porfavor"); 
+		
+		// la linea que se agrega es el paquete directo sin hacer la importación habitual colocando el import -----"".
+		
+		
 		// Show input dialog es una ventana de dialogo.
 		
 		int edad = Integer.parseInt(JOptionPane.showInputDialog("Introduce la edad"));
