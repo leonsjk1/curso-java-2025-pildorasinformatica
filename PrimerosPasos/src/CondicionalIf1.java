@@ -1,3 +1,5 @@
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.util.*;
 
 public class CondicionalIf1 {
@@ -31,7 +33,7 @@ public class CondicionalIf1 {
 		if(edad<=90) System.out.println("Cuidate");*/
 		
 		
-		if(edad<=18) System.out.println("Eres muy joven");
+		if(edad<=18) System.out.println("Eres muy joven"); 
 		
 		else if(edad<=35) System.out.println("Eres Joven");
 		
@@ -40,6 +42,36 @@ public class CondicionalIf1 {
 		else if(edad<=90) System.out.println("Cuidate");
 		
 		else System.out.println("Dónde vas con esa edad !!!");
+		
+		
+		
+		
+//		entrada.close();
+//		
+//		
+//		try {  // Bloque try-catch para el manejo de errores por si los archivos que mandamos como método de entrada
+//				// no exsiten en el código.
+//			
+//			System.setIn(new FileInputStream("datos.txt"));//Aqui empieza las nuevas lineas de entrada para código donde aca 
+//															//ya puedo utilizar el nuevo scanner con otro método de entrada.
+//		} catch (FileNotFoundException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		
+//		Scanner entrada2 = new Scanner(System.in);
+//		// Tendremos error de ejecución ya que esta cerrado el flujo de escaner con System.in, 
+//		// Sin la integración del nuevo método de entrada, ejemlpo el archivo de lectura arriba de este código.
+//		
+//		
+		/*
+		 * Como tenemos varias lineas de código, con muchos condicionales if, no podemos hacer los operadores ternarios.
+		 * ya que son varias lineas de código con el mismo if.
+		 * 
+		 * */
+		
+		
+		
 		
 	}
 
