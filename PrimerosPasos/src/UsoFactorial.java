@@ -29,6 +29,10 @@ public class UsoFactorial {
 		// el valor que ocupa en los positivos porque solo acepta un rango el tipo int.
 		
 		//BIGinteger ayudaria para manejar números enormes como tip importante importante.
+		
+		
+		
+		
 	}
 
 }
