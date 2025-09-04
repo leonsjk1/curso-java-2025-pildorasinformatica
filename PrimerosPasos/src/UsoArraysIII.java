@@ -41,6 +41,49 @@ public class UsoArraysIII {
 			System.out.println();
 		}
 
+		
+		
+		// VIDEO 26 actualización para el array bidimensional.
+		
+		/*Forma diferente de declarar un array de 2 dimensiones*/
+		
+		
+		int [][] matrix = {
+				{10, 15, 18, 19, 21},
+				{223, 2, 65, 62, 74},
+				{43, 17, 98, 22, 35},
+		};
+		
+//		for (int i = 0; i < 3; i++) {
+//			for (int j = 0; j < 5; j++) {
+//				System.out.print( " " + matrix[i][j]);
+//			
+//			}
+//			
+//			System.out.println();
+//			
+//		}
+		
+		for (int[] fila : matrix) { 
+			/* Este for lo que hace es recolectar la información de los arrays que se encuentran
+			 * en matrix que es el arreglo bidimensional en la posición de los arrays.
+			 * y guardar los valores en fila.
+			 * */
+			
+			System.out.println();
+			
+			for (int z : fila) {
+				/*
+				 * For que va a recorrer cada uno de los elementos de los 
+				 * arrays que se encuentran en la primera dimension.
+				 * 
+				 * los elementos que encuentra son solo de tipo entero.
+				 * */
+				
+				System.out.print(" " + z + " ");
+			}
+			System.out.println();
+		}
 
 	}
 
