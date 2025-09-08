@@ -1,15 +1,54 @@
 
 public class Coche {
-
-	double ancho;
 	
-	double alto;
-	 
-	double peso;
-	
-	String color;
+	public Coche() {
+		
+		ruedas=4; 
+		//Defines el estado inicial del objeto Coche con sus caracteristicas que necesites asignarle.
+		color = "gris";
+	};
 	
 	private int ruedas;
+
+	private double ancho;
+	
+	private double alto;
+	 
+	private double peso;
+	
+	private String color;
+	
+	public double getAncho() {
+		return ancho;
+	}
+
+	public void setAncho(double ancho) {
+		this.ancho = ancho;
+	}
+
+	public double getAlto() {
+		return alto;
+	}
+
+	public void setAlto(double alto) {
+		this.alto = alto;
+	}
+
+	public double getPeso() {
+		return peso;
+	}
+
+	public void setPeso(double peso) {
+		this.peso = peso;
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String c) {
+		color = c;
+	}
 	
 	public void setRuedas(int r){
 		/*
@@ -18,18 +57,16 @@ public class Coche {
 		 * recibirá el número de ruedas.		 * 
 		 * */
 		 
-		if(r<3 || r>4) { 
+		if(r<3 || r>4)  
 		/* 
 		 * Se utiliza la cóndicion para dar el número correcto de ruedas para un 
 		 * coche.
 		 * 
 		 *  */
-			System.out.println("El n° de ruedas no puede ser ese");
-
-		} else {
-			
+			System.out.println("El n° de ruedas no puede ser ese"); 
+		else 
 			ruedas=r;
-		}
+		
 	}
 	
 	public int getRuedas(){
