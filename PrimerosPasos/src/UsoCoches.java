@@ -20,6 +20,12 @@ public class UsoCoches {
 		
 		mazda.girar();
 		
+		mazda.setRuedas(2);
+		
+		System.out.println("El coche tiene: " + mazda.getRuedas() + " ruedas" );
+		// El valor que toma es cero, ya que el número que tiene el tipo entero por defecto es 
+		// un cero y depende del tipo de variable con el que se haya creado.
+		
 	}
 
 }
