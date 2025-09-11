@@ -4,6 +4,27 @@ public class UsoCoches {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		
+		Coche coche1 = new Coche();
+		
+		coche1.setAsientosCuero("Si");
+		
+		System.out.println("Peso: "+ coche1.getPeso());
+		
+		System.out.println("Precio: "+ coche1.getPrecio());
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 //		Coche renault = new Coche(); 
 //		/*Se crea un objeto de tipo coche y se puede acceder al 
 //		 * comportamiento o propiedades.
@@ -26,15 +47,17 @@ public class UsoCoches {
 //		// El valor que toma es cero, ya que el número que tiene el tipo entero por defecto es 
 //		// un cero y depende del tipo de variable con el que se haya creado.
 //		
-		Coche renault = new Coche();
-
-		renault.arrancar();
-
-		Coche mazda = new Coche();
-
-		mazda.girar();
-
-		mazda.setRuedas(3);
+		/*
+		 * Coche renault = new Coche();
+		 * 
+		 * renault.arrancar();
+		 * 
+		 * Coche mazda = new Coche();
+		 * 
+		 * mazda.girar();
+		 * 
+		 * mazda.setRuedas(3);
+		 */
 
 //		System.out.println("El coche tiene: " + mazda.getRuedas() + " ruedas");
 //
@@ -52,12 +75,14 @@ public class UsoCoches {
 		 * Saludos de parte de banca electrónica.
 		 */
 		
-		System.out.println("El mazda tiene color: " + mazda.getColor());
-		
-		renault.setColor("rojo"); 
-		// Si quiero cambiar el estado inicial. Debo de acceder al método setter del método que modifique.
-		
-		System.out.println("renault: " + renault.getColor());
+		/*
+		 * System.out.println("El mazda tiene color: " + mazda.getColor());
+		 * 
+		 * renault.setColor("rojo"); // Si quiero cambiar el estado inicial. Debo de
+		 * acceder al método setter del método que modifique.
+		 * 
+		 * System.out.println("renault: " + renault.getColor());
+		 */
 		
 
 	}
