@@ -8,6 +8,84 @@ public class UsoEmpleado {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		Empleado[] misEmpleados=new Empleado[3];
+		
+		
+//		String[] miarray = new String[3];
+		
+		misEmpleados[0] = new Empleado("Paco Gómez", 85000, 1990, 12, 17); 
+		/*
+		 * Se almacena el primer empleado en la posición 1 del array.
+		 * */
+		
+		misEmpleados[1] = new Empleado("Ana López", 95000, 1995, 06, 02);
+		/*
+		 * Se almacena el segundo elemento del array.
+		 * */
+		
+		misEmpleados[2] = new Empleado("Maria Martín", 105000, 2002, 03, 15);
+		/*
+		 * Se almacena el tercer elemento del array empleado.
+		 * */
+		
+		
+//		for (int i = 0; i < 3; i++) {
+//			
+//			// Se agrega al método sube sueldo la cantidad a aumentar al array misEmpleados en cada posición.
+//			misEmpleados[i].subeSueldo(5);
+//		}
+//		
+//		for (int i = 0; i < 3; i++) {
+//			
+//			// Accede y acomoda los datos en su respectiva posición de cada valor del array de mis empleados.
+//			System.out.println("Nombre: " + misEmpleados[i].dameNombre() 
+//					+ " Sueldo: " + misEmpleados[i].dameSueldo() 
+//					+ " Fecha de alta: " + misEmpleados[i].dameFechaContrato());
+//		}
+		
+		for(Empleado e: misEmpleados) {
+			e.subeSueldo(5); // hace lo mismo para el método Empleado de subir sueldo.
+		}
+		
+		for(Empleado e: misEmpleados) {
+			System.out.println("Nombre: " + e.dameNombre() 
+					+ " Sueldo: " + e.dameSueldo() 
+					+ " Fecha de alta: " + e.dameFechaContrato());		
+		}
+		
+		
+//		Empleado empleado1=new Empleado("Paco Gómez", 85000, 1990, 12, 17);
+//		
+//		Empleado empleado2=new Empleado("Ana López", 95000, 1995, 06, 02);
+//		
+//		Empleado empleado3=new Empleado("Maria Martín", 105000, 2002, 03, 15);
+//		
+//		empleado1.subeSueldo(5);
+//		empleado2.subeSueldo(5);
+//		empleado3.subeSueldo(5);
+//		
+//		System.out.println("Nombre: " + empleado1.dameNombre() + " Sueldo: " + empleado1.dameSueldo()
+//		+ " Fecha de Alta: " + empleado1.dameFechaContrato());
+//		
+//		System.out.println("Nombre: " + empleado2.dameNombre() + " Sueldo: " + empleado2.dameSueldo()
+//		+ " Fecha de Alta: " + empleado2.dameFechaContrato());
+//		
+//		System.out.println("Nombre: " + empleado3.dameNombre() + " Sueldo: " + empleado3.dameSueldo()
+//		+ " Fecha de Alta: " + empleado3.dameFechaContrato());
+		
+		/* Los campos de empleado muestran los datos de su contrato de cada empleado y a su sueldo se 
+		 * les sube el 5% más con los métodos sube sueldo.
+		 * 
+		 * 
+		 * También se hara otro código almacenando a los empleados con un array y se utilizará un bucle for
+		 * para subir el sueldo a los empleados, y recorrer el array de empleados y mostrar los resultados en
+		 * consola.
+		 * 
+		 * por eso se comenta el código de arriba.
+		 * */
+		
+		
 		/*
 		 * Las clases se generan en otra carpeta dependiendo del paquete
 		 * para mejor organización.
@@ -70,7 +148,7 @@ class Empleado {
 	
 	public String dameNombre() { // get prefijo inicial en el nombre del método, 
 								 //para decir que es un getter o un setter set y el nombre.
-		return nombre; 
+		return nombre;
 	}
 	
 	
