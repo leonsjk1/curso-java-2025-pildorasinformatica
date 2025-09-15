@@ -8,12 +8,35 @@ public class Pruebas {
 		
 		Empleados trabajador2 = new Empleados("Ana");
 		
+		Empleados trabajador3 = new Empleados("Antonio");
+		
+		Empleados trabajador4 = new Empleados("María");
+		
+		Empleados trabajador5 = new Empleados("María2");
+		
 		trabajador1.cambiaSeccion("RRHH");
 		
 		System.out.println(trabajador1.devuelveDatos());
 		
+		
+//		Empleados.Id++;  
+		/* 
+		 * El problema de esto es que la variable la estamos dejando en public saltando
+		 * el encapsulamiento y la segunda problematica es que tu estas haciendo un conteo
+		 * manual del id para objeto empleado que se crea en la clase main 
+		 * para eso se utiliza otra solución para los tipos static.
+		 * 
+		 * */
+		
 		System.out.println(trabajador2.devuelveDatos());
 		
+//		Empleados.Id++; // Forma Incorrecta.
+		
+		System.out.println(trabajador3.devuelveDatos());
+		
+		System.out.println(trabajador4.devuelveDatos());
+		
+		System.out.println(trabajador5.devuelveDatos());
 	}
 
 }
@@ -27,6 +50,13 @@ class Empleados {
 		
 		seccion = "Administración";
 		
+		Id=IdSiguiente; 
+		// Se guarda el valor de idsiguiente en Id compartiendo los valores de idSiguiente.
+		
+		IdSiguiente++;
+		// Se incrementa Id Siguiente para cuando se crea el nuevo 
+		// objeto y tenga el siguiente valor del id.
+		
 	}
 	
 	public void cambiaSeccion(String seccion) { //Setter
@@ -37,14 +67,21 @@ class Empleados {
 	
 	public String devuelveDatos() {
 		
-		return "El nombre: " + nombre + " y la sección es " + seccion;
+		return "El nombre: " + nombre + " y la sección es " + seccion + " y el Id= " + Id;
 		
 	}
 	
-	private final String nombre; 
+	private final String nombre;
 	// Este valor lo has convertido en una constante por lo 
 	// cual dara error si lo quieres utilizar en algun método 
 	// una vez que ya lo asignaste.
 	
-	private String seccion;	
+	private String seccion;
+	
+	private int Id; 
+	// Igualar el valor de la variable statica para realizar la encapsulación del valor.
+	
+	private static int IdSiguiente=1; 
+	// Variable que solo van a compartir el ID para empleado.
+	
 }
