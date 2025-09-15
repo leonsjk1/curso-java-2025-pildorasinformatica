@@ -16,7 +16,12 @@ public class Pruebas {
 		
 		trabajador1.cambiaSeccion("RRHH");
 		
-		System.out.println(trabajador1.devuelveDatos());
+		System.out.println(trabajador1.devuelveDatos() + "\n" 
+		+ trabajador2.devuelveDatos() + "\n" + trabajador3.devuelveDatos() + 
+		"\n" + trabajador4.devuelveDatos() + "\n" + trabajador5.devuelveDatos());
+		
+		
+		System.out.println(Empleados.dameIDSiguiente());
 		
 		
 //		Empleados.Id++;  
@@ -24,19 +29,19 @@ public class Pruebas {
 		 * El problema de esto es que la variable la estamos dejando en public saltando
 		 * el encapsulamiento y la segunda problematica es que tu estas haciendo un conteo
 		 * manual del id para objeto empleado que se crea en la clase main 
-		 * para eso se utiliza otra solución para los tipos static.
+		 * para eso se utiliza otra solución para los tipos static 
 		 * 
 		 * */
 		
-		System.out.println(trabajador2.devuelveDatos());
+//		System.out.println(trabajador2.devuelveDatos());
 		
 //		Empleados.Id++; // Forma Incorrecta.
 		
-		System.out.println(trabajador3.devuelveDatos());
+//		System.out.println(trabajador3.devuelveDatos());
 		
-		System.out.println(trabajador4.devuelveDatos());
+//		System.out.println(trabajador4.devuelveDatos());
 		
-		System.out.println(trabajador5.devuelveDatos());
+//		System.out.println(trabajador5.devuelveDatos());
 	}
 
 }
@@ -69,6 +74,17 @@ class Empleados {
 		
 		return "El nombre: " + nombre + " y la sección es " + seccion + " y el Id= " + Id;
 		
+	}
+	
+	
+	/* Queremos saber cual es el id siguiente del trabajador para esto, 
+	 * el método estatico trabaja sobre la clase como metodo, 
+	 * no actua sobre los objetos, se utiliza la misma nomenclatura que las
+	 * variables y constantes estaticas, Ejem: Empleados.dameIdSiguiente().
+	 * */
+	public static String dameIDSiguiente() { 
+		
+		return "El id Siguiente es : " + IdSiguiente ;
 	}
 	
 	private final String nombre;
