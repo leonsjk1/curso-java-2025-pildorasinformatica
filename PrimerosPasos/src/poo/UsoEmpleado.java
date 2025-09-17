@@ -179,7 +179,6 @@ class Empleado {
 		 * defecto.
 		 * 
 		 * 
-		 * 
 		 * */
 		
 	}
