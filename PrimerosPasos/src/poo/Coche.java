@@ -26,6 +26,7 @@ public class Coche {
 		
 		ruedas=4; 
 		
+		ancho=353.6;
 		//Defines el estado inicial del objeto Coche con sus caracteristicas que necesites asignarle.
 		
 		color = "gris";
@@ -37,6 +38,7 @@ public class Coche {
 		peso=pesoBase;
 		
 		precio=precioBase;
+		
 	};
 	
 	public double getAncho() {
