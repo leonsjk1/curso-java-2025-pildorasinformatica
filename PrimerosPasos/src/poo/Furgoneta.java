@@ -27,4 +27,10 @@ public class Furgoneta extends Coche {
 		
 	}
 	
+	public String dimeDatosFurgoneta()
+	{
+		return " La capacidad de carga es: " + capacidad_carga + " y las plazas son: "
+				+ plazas_extra;
+	}
+	
 }
