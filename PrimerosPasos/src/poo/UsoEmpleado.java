@@ -9,7 +9,7 @@ public class UsoEmpleado {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Empleado[] misEmpleados=new Empleado[3];
+		Empleado[] misEmpleados=new Empleado[4];
 		
 		
 //		String[] miarray = new String[3];
@@ -27,6 +27,15 @@ public class UsoEmpleado {
 		misEmpleados[2] = new Empleado("Maria Martín", 105000, 2002, 03, 15);
 		/*
 		 * Se almacena el tercer elemento del array empleado.
+		 * */
+		
+		misEmpleados[3] = new Empleado("Antonio Fernández"); 
+		/* 
+		 * El constuctor solo recibe un parametro ya que al haber una 
+		 * sobrecarga de métodos del tipo de constructor se le puede pasar la cantidad
+		 * difente de los demás parametros por que sino, dara error en los métodos, por 
+		 * ello a este constructor le pasamos 1 parámetro.
+		 * 
 		 * */
 		
 		
@@ -146,8 +155,39 @@ class Empleado {
 		
 	}
 	
+	public Empleado (String nom) {
+		/*
+		 * Este es el constructor que solo recibe como parámetro el nombre del nuevo
+		 * empleado, para crear otro método de alta para los usuarios nuevos.
+		 *
+		 * */
+		
+//		nombre = nom;
+		
+		this(nom, 30000, 2000, 01, 01); 
+		
+		/* El this, hace referencia al otro constructor de la clase 
+		 * solo cuando tiene un segundo método que es el que tiene la 
+		 * creación de los objetos necesarios, para el problema que se
+		 * tenga en situaciones difentes.
+		 * 
+		 * Támbien tienen que coincidir el número de parámetros que
+		 * se quiere, para que pueda referenciar al constructor que
+		 * queremos utilizar.
+		 * 
+		 * Si no queremos utilizar constructores, solo se va a llamar al constructor por
+		 * defecto.
+		 * 
+		 * 
+		 * 
+		 * */
+		
+	}
+	
 	public String dameNombre() { // get prefijo inicial en el nombre del método, 
 								 //para decir que es un getter o un setter set y el nombre.
+								 //este método no recibe el prefijo, pero hace la misma
+								 // función de un setter.
 		return nombre;
 	}
 	
