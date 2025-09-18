@@ -9,7 +9,7 @@ public class UsoEmpleado {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Empleado[] misEmpleados=new Empleado[4];
+		Empleado[] misEmpleados=new Empleado[6];
 		
 		
 //		String[] miarray = new String[3];
@@ -39,6 +39,20 @@ public class UsoEmpleado {
 		 * */
 		
 		
+		Jefatura jefe_RRHH = new Jefatura("Juan", 55000, 2006, 9, 25);
+		/* Se crea instancia de la clase jefatura con lo que se 
+		 * realizo en el video anterior.
+		 * 
+		 * */
+		
+		jefe_RRHH.estableceIncentivo(2570);
+		
+		
+		misEmpleados[4] = jefe_RRHH;
+		misEmpleados[5] = new Jefatura("María", 95000, 1999, 5, 26);
+		/*Polimorfismo en acción. Principio de sustitución en el array */
+		
+		
 //		for (int i = 0; i < 3; i++) {
 //			
 //			// Se agrega al método sube sueldo la cantidad a aumentar al array misEmpleados en cada posición.
@@ -61,6 +75,12 @@ public class UsoEmpleado {
 			System.out.println("Nombre: " + e.dameNombre() 
 					+ " Sueldo: " + e.dameSueldo() 
 					+ " Fecha de alta: " + e.dameFechaContrato());		
+			
+			/*
+			 * La maquina virtual de java es capaz en tiempo de ejecución de saber
+			 * a que método pertenciente a la clase padre o de la subclase tiene que 
+			 * llamar.
+			 * */
 		}
 		
 		
