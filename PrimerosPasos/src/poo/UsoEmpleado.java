@@ -215,6 +215,54 @@ class Empleado {
 	
 	private Date altaContrato;
 	
+}
+
+
+class Jefatura extends Empleado { 
 	
+	/*
+	 * Si se deja sin constructor dará error ya que intuye que se esta llamando
+	 * al constructor por defecto, sin argumentos o parámetros establecidos por lo cual
+	 * hay que pasarle un constructor que reciba los parámetros creados en la clase
+	 * Empleado.
+	 * 
+	 * Habrá que crear el constructor de la clase Jefatura que llame al constructor de la clase
+	 * Empleado o clase padre.
+	 * 
+	 * */
+	
+	public Jefatura(String nom, double sue, int anio, int mes, int dia) {
+		
+		super(nom, sue, anio, mes, dia);
+		/* Dependiendo del constructor que se quiera llamar, es el número de parámetros que se
+		 * le debe de indicar.
+		 * 
+		 **/
+	}
+	
+	public double dameSueldo() {
+		
+		double sueldoJefe=super.dameSueldo(); 
+		// llama con la instrucción de la palabra super al método que regresa
+		// el constructor de Empleado, y no el de jefatura.
+		
+		
+		/* Aqui se visualiza un nuevo concepto, la sobreescritura de métodos.
+		 * 
+		 * Esto que se crea acá, sobreescribe para la clase Jefatura el método,
+		 * de la clase empleado. 
+		 * 
+		 * Únicamente para la clase Jefatura. Esto se identifica con el triangulo
+		 * que se visualiza del lado izquierdo del IDE que se utiliza.
+		 * */
+		
+		return sueldoJefe + incentivo;
+	}
+
+	public void estableceIncentivo(double b) {
+		incentivo = b;
+	}
+	
+	private double incentivo;
 	
 }
