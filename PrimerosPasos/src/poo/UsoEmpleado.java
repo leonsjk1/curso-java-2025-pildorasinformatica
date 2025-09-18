@@ -50,6 +50,13 @@ public class UsoEmpleado {
 		
 		misEmpleados[4] = jefe_RRHH;
 		misEmpleados[5] = new Jefatura("María", 95000, 1999, 5, 26);
+		
+		
+		Jefatura jefa_Finanzas = (Jefatura) misEmpleados[5];
+		
+		jefa_Finanzas.estableceIncentivo(55000);
+		
+		
 		/*Polimorfismo en acción. Principio de sustitución en el array */
 		
 		
@@ -238,7 +245,7 @@ class Empleado {
 }
 
 
-class Jefatura extends Empleado { 
+	final class Jefatura extends Empleado { 
 	
 	/*
 	 * Si se deja sin constructor dará error ya que intuye que se esta llamando
@@ -260,11 +267,21 @@ class Jefatura extends Empleado {
 		 **/
 	}
 	
+//	public final double dameSueldo() {
+//		
+//		double sueldoJefe=super.dameSueldo(); 
+//		return sueldoJefe + incentivo;
+//	} con esto se evita la sobre escritura de métodos.
+
+// 	  Con la palabra final.
+	
+	
 	public double dameSueldo() {
 		
 		double sueldoJefe=super.dameSueldo(); 
+		
 		// llama con la instrucción de la palabra super al método que regresa
-		// el constructor de Empleado, y no el de jefatura.
+		// el constructor de Empleado, y no el de jefatura .
 		
 		
 		/* Aqui se visualiza un nuevo concepto, la sobreescritura de métodos.
@@ -286,3 +303,6 @@ class Jefatura extends Empleado {
 	private double incentivo;
 	
 }
+
+	
+
